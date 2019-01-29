@@ -1,1 +1,1 @@
-web: cd mindfirl; gunicorn mindfirl:app
+web: cd mindfirl; gunicorn run:app
