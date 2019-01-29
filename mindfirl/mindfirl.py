@@ -1,3 +1,4 @@
+import os
 import flask
 from flask import Flask, render_template, redirect, url_for, session, jsonify, request, send_from_directory
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
@@ -6,7 +7,6 @@ from wtforms.fields import SelectField, FileField, FloatField, SelectMultipleFie
 from wtforms.fields import core, html5, simple
 from wtforms import Form, validators, widgets
 from urllib.parse import urlparse, urljoin
-import os
 import time
 import json
 from user import User, auth_user, register_user
