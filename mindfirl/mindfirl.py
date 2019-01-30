@@ -992,10 +992,3 @@ def page_not_found(e):
 @app.errorhandler(403)
 def page_not_found(e):
     return render_template('403.html')
-
-
-
-if __name__ == '__main__':
-    #app.run(debug=True)
-    # app.run(host='0.0.0.0', debug=True)
-    app.run()
